@@ -15,10 +15,12 @@ h1{
    align-items: center;
    justify-content: space-between;
    background-color: black;
+   height: 90px;
 }
 .nav-list{
   list-style: none;
   display: flex;
+  
 }
 .nav-list-item{
   margin-left: 10px;
@@ -27,4 +29,5 @@ h1{
 .footer{
   text-align: center;
   background-color: black;
+  margin-top: 20%;
 }

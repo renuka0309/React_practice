@@ -1,50 +1,7 @@
-function Header(){
-  return(
-    <header className="header">
-      <nav>
-        <img className="img" src="data:image/png;base64,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" 
-        width="46px" alt="logo"></img>
-        <ul className="nav-list">
-          <li className="nav-list-item">Pricing</li>
-          <li className="nav-list-item">about</li>
-          <li className="nav-list-item">contact</li>
-        </ul>
-      </nav>
-    </header>
-  )
-}
+
 function App(){
-  return(
-  <>
-  <div>
-    <h1>Fun Facts about React</h1>
-    <ul>
-      <li>It is a library, not a framework</li>
-      <li>Uses a Virtual DOM for performance</li>
-      <li>Relies on component-driven architecture</li>
-      <li>Features JSX syntax</li>
-      <li>Enforces unidirectional data flow</li>
-    </ul>
-    </div>
-
-  <div>
-    <h1>Excited to learn react!</h1>
-    <ol>
-      <li>It has more job opportunities</li>
-      <li>Code re-usability</li>
-      <li>Readability</li>
-    </ol>
-  </div>
-  </>
-  )
+  
 }
 
-function Footer(){
-  return(
-    <footer className="footer">
-      <small>© 2026 React.</small>
-    </footer>
-  )
-}
+
 export default App;
-export { Header, Footer };
