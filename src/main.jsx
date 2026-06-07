@@ -1,12 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './components/contact/index.css'
-import ContactLog from './components/contact/contactLog.jsx'
-import App from './components/contact/App.jsx'
+import App from './components/jokes/App'
+//import Jokes from './components/jokes/funPage'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ContactLog />
+    
     <App />
   </StrictMode>
 )
