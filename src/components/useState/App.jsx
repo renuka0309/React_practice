@@ -4,12 +4,12 @@ export default function App(){
     const [count, setCount]=React.useState(0)
 
     function add(){
-        setCount(count+1)
+        setCount(prevCount=>prevCount+1)
     }
 
     function sub(){
-        setCount(count-1)
-    }
+        setCount(prevCount=>prevCount-1)
+    } 
     return(
         <>
           <h1>How many times will bob say "State" in this section?</h1>
