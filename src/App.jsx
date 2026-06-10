@@ -1,7 +1,19 @@
+import React from "react"
 
-function App(){
-  
+export default function App(){
+  let [res, setRes]=React.useState("yes")
+
+  function handleClick(){
+    setRes("Definitely");
+  }
+  return(
+    <>
+     <h1>Is state important to know?</h1>
+     <button onClick={handleClick}>{res}</button>
+
+    </> 
+  )
 }
 
 
-export default App;
+
